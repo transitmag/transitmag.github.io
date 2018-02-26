@@ -1,1 +1,1 @@
-# transitmag.github.io
+# Website for transitmag
