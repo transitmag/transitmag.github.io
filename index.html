@@ -1,76 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+ <head>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+  .imgcontainer {
+    position: relative;
+  }
 
-  <head>
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-    <title>Transitmag</title>
+  .imgcontainer:hover .image {
+    opacity: 0.3;
+  }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  .imgcontainer:hover .middle {
+    opacity: 1;
+  }
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/coming-soon.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <div class="overlay"></div>
-
-    <div class="masthead">
-      <div class="masthead-bg"></div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <img src="img/logo.jpg" class="img-responsive" alt="Transitmag">
+  .text {
+    color: #000000;
+    font-size: 30px;
+    padding: 16px 32px;
+    font-family: 'Nunito', sans-serif;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="container-fluid" style="padding-left: 15%; padding-right: 15%;">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted" href="#" style="font-family: 'Nunito', sans-serif">Work</a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="#"><img src="static/images/logo.jpg" alt="Avatar" style="width:100px;"></a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="text-muted" href="#" style="font-family: 'Nunito', sans-serif">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="row" style="margin-top: 30px; margin-bottom: 20px;">
+      <div class="col-md-12">
+        <h3 style="margin-left:10px; margin-right: 10px; margin-bottom: 30px; font-family: 'Nunito', sans-serif; font-size: 40px; text-align: center;">Arkii (Ananthakrishnan Ajay) is an electronic music producer/performer based in Bangalore, India</h3>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/20.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://www.beatport.com/track/european-nation-arkii-remix/11423832" style="color: #000;">European Nation remix peaks at #51 in Beatport Minimal and Deep Tech top 100 charts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/19.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://www.beatport.com/track/european-nation-arkii-remix/11423832" style="color: #000;">Iron & Rttwlr - European Nation (Arkii Remix) out on Beatport</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/18.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://soundcloud.com/arkiimusic" style="color: #000;">14K stream on Soundcloud</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/15.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://soundcloud.com/counterbalancednb" style="color: #000;">Drum N' Bass project with @liquidmemoirs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/17.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://open.spotify.com/artist/0zljm7c2gtiGZQm9sdjdeC" style="color: #000;">Find Arkii on Spotify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/16.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://www.youtube.com/watch?v=pq0Vbediftk" style="color: #000;">Guilt reaches 15K streams on Youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/14.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Performing live with the Interactive Ablenton Jacket for UX.FTT and Denims N' Jeans</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/13.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://www.beatport.com/track/guilt-original-mix/10866497" style="color: #000;">Guilt on Beatport</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/12.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://soundcloud.com/dark-monkey-music/free-dl-arkii-guilt-melodic-techno" style="color: #000;">Guilt on Soundcloud</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/11.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Performing 'Cache' live in Bangalore for Reproduce Artists</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/9.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="http://www.thewildcity.com/features/8839-wild-city-singled-out-june-2018" style="color: #000;">Anton's Theme features in Wild City</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/10.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="http://boxout.fm/shows/skip-a-beat/010" style="color: #000;">Spryk opening his Boxout.fm show 'Skip A Beat - 010' with Haven from the new album</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/5.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Had a great time playing in Chennai. Shoutout to everyone who showed up to support the artists</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/8.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://sunbleach.net/2018/06/08/kaiseki-digital-releases-cache-deluxe-by-arkii/" style="color: #000;">'Cache' featured in an article on Sunbleach</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/7.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://itunes.apple.com/us/album/cache-deluxe/1389977742" style="color: #000;">Cache on iTunes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/6.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://kaisekidigital.bandcamp.com/album/cache-deluxe" style="color: #000;">Cache - first full length album out on Kaiseki Digital, in both digital and physical formats</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/4.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">Playing an all-originals set in Chennai for Reproduce Artists</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/3.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://soundcloud.com/arkiimusic/spectre" style="color: #000;">Spectre out on Soundcloud</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/2.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://soundcloud.com/arkiimusic/neverbloom" style="color: #000;">Neverbloom out on Soundcloud</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 10px;">
+        <div class="imgcontainer" style="border-style: solid; border-width: 2px; border-color: #dedfe0;">
+          <img src="static/images/1.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text">
+              <a href="https://soundcloud.com/arkiimusic" style="color: #000;">Find Arkii on Soundcloud</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <p style="text-align: center; font-family: 'Nunito', sans-serif; font-size: 16px;">&copy; 2018-2019 Arkii</p>
+      </div>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/vide/jquery.vide.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/coming-soon.js"></script>
-
-  </body>
-
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
 </html>
